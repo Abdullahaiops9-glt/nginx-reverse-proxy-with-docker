@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  web:
+    build: ./app
+    container_name: flask-app
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - web
