@@ -25,28 +25,51 @@
 ## 📁 Project Structure
 
 nginx-reverse-proxy-with-docker/
+
 │
+
 ├── app/
+
 │   ├── app.py
+
 │   ├── requirements.txt
+
 │   └── Dockerfile
+
 │
+
 ├── nginx/
+
 │   └── default.conf
+
 │
+
 ├── docker-compose.yml
+
 ├── commands.sh
+
 ├── README.md
+
 │
+
 └── screenshots/
+    
     ├── 1-project-structure.png
+    
     ├── 2-flask-app-created.png
+    
     ├── 3-nginx-config-created.png
+    
     ├── 4-docker-compose-created.png
+    
     ├── 5-build-process.png
+    
     ├── 6-containers-running.png
+    
     ├── 7-nginx-reverse-proxy-working.png
+    
     ├── 8-container-logs.png
+   
     └── 9-stopping-container.png
 
 ## 📂 Project Files
